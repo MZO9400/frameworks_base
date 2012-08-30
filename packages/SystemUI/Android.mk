@@ -11,7 +11,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := Keyguard \
     android-support-v4 \
     android-opt-cards
 
-LOCAL_JAVA_LIBRARIES := telephony-common
+LOCAL_JAVA_LIBRARIES := telephony-common org.turborom.utils
 
 LOCAL_PACKAGE_NAME := SystemUI
 LOCAL_CERTIFICATE := platform
