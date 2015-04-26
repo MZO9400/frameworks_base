@@ -2495,4 +2495,7 @@
     <integer name="config_nightColorTemperature">4500</integer>
     <integer name="config_outdoorAmbientLux">9000</integer>
 
+    <!-- External CM Services list -->
+    <string-array name="config_externalCMServices"></string-array>
+
 </resources>
