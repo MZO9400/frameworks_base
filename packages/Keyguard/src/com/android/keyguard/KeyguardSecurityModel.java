@@ -35,7 +35,8 @@ public class KeyguardSecurityModel {
         Password, // Unlock by entering an alphanumeric password
         PIN, // Strictly numeric password
         SimPin, // Unlock by entering a sim pin.
-        SimPuk // Unlock by entering a sim puk
+        SimPuk, // Unlock by entering a sim puk
+        Gesture // unlock by drawing a gesture
     }
 
     private final Context mContext;
@@ -83,6 +84,9 @@ public class KeyguardSecurityModel {
                 return SecurityMode.Pattern;
             case DevicePolicyManager.PASSWORD_QUALITY_UNSPECIFIED:
                 return SecurityMode.None;
+
+            case DevicePolicyManager.PASSWORD_QUALITY_GESTURE_WEAK:
+		return SecurityMode.Gesture;
 
             default:
                 throw new IllegalStateException("Unknown security quality:" + security);

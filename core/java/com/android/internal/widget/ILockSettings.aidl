@@ -17,6 +17,7 @@
 package com.android.internal.widget;
 
 import android.app.trust.IStrongAuthTracker;
+import android.gesture.Gesture;
 import com.android.internal.widget.VerifyCredentialResponse;
 
 /** {@hide} */
@@ -30,11 +31,14 @@ interface ILockSettings {
     void setLockPattern(in String pattern, in String savedPattern, int userId);
     VerifyCredentialResponse checkPattern(in String pattern, int userId);
     VerifyCredentialResponse verifyPattern(in String pattern, long challenge, int userId);
+    void setLockGesture(in Gesture gesture, int userId);
+    boolean checkGesture(in Gesture gesture, int userId);
     void setLockPassword(in String password, in String savedPassword, int userId);
     VerifyCredentialResponse checkPassword(in String password, int userId);
     VerifyCredentialResponse verifyPassword(in String password, long challenge, int userId);
     boolean checkVoldPassword(int userId);
     boolean havePattern(int userId);
+    boolean haveGesture(int userId);
     boolean havePassword(int userId);
     void sanitizePassword();
     void registerStrongAuthTracker(in IStrongAuthTracker tracker);
