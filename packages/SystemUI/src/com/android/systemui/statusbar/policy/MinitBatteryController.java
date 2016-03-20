@@ -40,8 +40,8 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.android.internal.util.turbo.*;
-import com.android.internal.util.turbo.TurboPackageMonitor.PackageState;
+import com.android.internal.utils.turbo.*;
+import com.android.internal.utils.turbo.TurboPackageMonitor.PackageState;
 import com.android.systemui.R;
 import com.android.systemui.statusbar.phone.KeyguardStatusBarView;
 import com.android.systemui.statusbar.phone.PhoneStatusBar;

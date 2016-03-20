@@ -114,7 +114,7 @@ import com.android.internal.statusbar.StatusBarIcon;
 import com.android.internal.util.cm.WeatherController;
 import com.android.internal.util.cm.WeatherControllerImpl;
 import com.android.internal.util.cm.WeatherController.WeatherInfo;
-import com.android.internal.util.turbo.TurboPackageMonitor;
+import com.android.internal.utils.turbo.TurboPackageMonitor;
 import com.android.keyguard.KeyguardHostView.OnDismissAction;
 import com.android.keyguard.KeyguardUpdateMonitor;
 import com.android.keyguard.KeyguardUpdateMonitorCallback;
